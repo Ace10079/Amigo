@@ -18,11 +18,11 @@ function Page() {
 
   return (
     <div>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center lg:p-0 p-2">
         <img src="/logo.png" alt="" className="h-32 w-40" />
-        <div className="flex items-center space-x-2 text-green-800 font-bold text-xl">
+        <div className="flex lg:flex-row flex-col items-center space-x-2 text-green-800 font-bold text-xl ">
           <p>+971 55 8996689</p>
-          <span>kahmed@amigoagencies.onmicrosoft.com</span>
+          <p>kahmed@amigoagencies.onmicrosoft.com</p>
         </div>
         <ul className="flex flex-row space-x-4 text-gray-500 list-none">
           <li className="hover:text-gray-700 cursor-pointer">About Amigo</li>
