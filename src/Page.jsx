@@ -81,7 +81,7 @@ function Page() {
               {cards.map((card, index) => (
                 <div
                   key={index}
-                  className="min-w-full p-4 bg-gradient-to-br from-green-400 via-green-500 to-green-700 text-black text-center flex justify-center items-center relative rounded-lg shadow-lg"
+                  className="min-w-full p-4 bg-gradient-to-br from-red-400 via-red-500 to-red-700 text-white text-center flex justify-center items-center relative rounded-lg shadow-lg"
                 >
                   <div className="absolute inset-0 bg-pattern opacity-20"></div>{" "}
                   {/* Background pattern */}
@@ -101,7 +101,7 @@ function Page() {
             <div
               key={index}
               className={`w-3 h-3 rounded-full ${
-                index === currentCard ? "bg-green-700" : "bg-gray-400"
+                index === currentCard ? "bg-black" : "bg-gray-400"
               }`}
             ></div>
           ))}
@@ -109,12 +109,12 @@ function Page() {
       </div>
 
       {/* Content sections */}
-      <div className="flex lg:flex-row flex-col mt-5 lg:p-10">
+      <div className="flex lg:flex-row flex-col mt-5 lg:p-10 justify-center">
         <div className="lg:w-1/2 p-3">
           <p className="inline-block font-bold text-3xl font-trebuchet">
             Who we are
           </p>
-          <p className="text-green-800 font-bold font-trebuchet">
+          <p className="text-red-800 font-bold font-trebuchet">
             Amigo are an Export Sales & Marketing Agency
           </p>
           <p>
@@ -128,9 +128,9 @@ function Page() {
             East, Africa, and the Indian Subcontinent.
           </p>
         </div>
-        <div className="flex justify-items-center lg:w-1/2 p-2">
-          <div className="bg-slate-400 p-2 rounded-lg">
-            <p className="text-center font-bold text-2xl underline font-trebuchet">
+        <div className="flex justify-items-center lg:w-1/4 p-2">
+          <div className="bg-slate-200 p-2 rounded-lg">
+            <p className="text-center font-bold text-2xl underline font-trebuchet text-red-600">
               Export Sales & Marketing Experience
             </p>
             <p className="text-center lg:mt-8">
@@ -144,43 +144,43 @@ function Page() {
       </div>
 
       {/* Additional sections (What we do, How we work, Why choose Amigo) */}
-      <div className="lg:p-20 bg-slate-300 lg:rounded-full lg:mt-0 mt-10">
+      <div className="lg:p-20 bg-gray-100  lg:mt-0 mt-10">
         <p className="font-bold text-2xl mb-5">What We Do</p>
         <div className="flex lg:flex-row flex-col gap-2">
             <div>  
-                <p className="font-bold text-green-800"> Export Brand Development</p>
+                <p className="font-bold text-red-800"> Export Brand Development</p>
                 <p>We work with manufacturer brands to develop and implement a program to build brand awareness and understanding across the frontier regions being targeted.</p>
             </div>
             <div>  
-                <p className="font-bold text-green-800"> Export Sales Management</p>
+                <p className="font-bold text-red-800"> Export Sales Management</p>
                 <p>We take on the credit risk and manage distributor orders from initial receipt through to payment and delivery.</p>
             </div>
             <div>  
-                <p className="font-bold text-green-800">Export Distributor Training & Support</p>
+                <p className="font-bold text-red-800">Export Distributor Training & Support</p>
                 <p>We work with distributors to ensure they have the knowledge and marketing tools necessary to sell and support our agency product ranges. This role is tailored to meet the unique requirements of the agency brand, the region and the distributor.</p>
             </div>
            
         </div>
       </div>
-      <div className="lg:p-14 bg-green-500  mt-10">
-        <p className="font-bold text-2xl mb-4">How We Work</p>
+      <div className="lg:p-14 bg-red-500 text-white">
+        <p className="font-bold text-2xl">How We Work</p>
         <div className="flex lg:flex-row flex-col gap-2">
             <div>  
-                <p className="font-bold text-black">Long Term, Open Book Partnerships</p>
+                <p className="font-bold ">Long Term, Open Book Partnerships</p>
                 <p className="text-white">The relationships we commit to with agency brands and distributors are long term and transparent. These features are essential to be able to justify the investments being made by all parties, deliver a strategic outcome and work efficiently together. We do not want to simply manage sales but rather take responsibility for the strategic development of the brand and sales within the target export regions.</p>
             </div>
             <div>  
-                <p className="font-bold text-black">Strategy and Innovation Drives Action</p>
+                <p className="font-bold ">Strategy and Innovation Drives Action</p>
                 <p className="text-white">Our approach brings together strategic planning with coordinated on-the-ground action to ensure our brands succeed in their new markets. We are continually innovating our marketing approaches to leverage emerging digital technologies, and we tailor these efforts through our on-the-ground, real-time knowledge.</p>
             </div>
             <div>  
-                <p className="font-bold text-black">A Full Service, Single Point Solution</p>
+                <p className="font-bold ">A Full Service, Single Point Solution</p>
                 <p className="text-white">merchlin provide a full service solution for export market development encompassing research, strategic planning, marketing and promotions implementation, distributor training and support, sales, credit and logistics management and activity analysis and reporting.</p>
             </div>
            
         </div>
       </div>
-      <div className="lg:p-20 bg-black lg:rounded-full lg:mt-5 mt-10 text-white">
+      <div className="lg:p-20 bg-gray-500  text-white">
         <p className="font-bold text-2xl mb-5 ">Why Choose Amigo</p>
         <div className="flex lg:flex-row flex-col gap-2">
             <div>  
